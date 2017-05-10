@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="I"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/scheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/semester"
+            android:layout_marginLeft="32dp"
+            android:paddingRight="16dp"
+            android:text="Scheme "
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/scheme_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/semester"
+            android:layout_toRightOf="@+id/scheme"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/090713090713122520.pdf"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/syllabus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scheme_link"
+            android:layout_marginLeft="32dp"
+            android:paddingRight="14dp"
+            android:paddingTop="8dp"
+            android:text="Syllabus "
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/syllabus_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scheme_link"
+            android:layout_toRightOf="@+id/syllabus"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:paddingTop="8dp"
+            android:text="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/Syl.pdf180913120040.pdf"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

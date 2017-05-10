@@ -1,10 +1,13 @@
 package com.example.sirt.sirtmobile;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class timetable extends AppCompatActivity {
+/**
+ * Created by hp on 10-May-17.
+ */
 
+public class TimeTableActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

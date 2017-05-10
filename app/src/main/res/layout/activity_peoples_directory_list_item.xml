@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
         <ImageView
             android:id="@+id/faculty_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_alignParentLeft="true"
             android:paddingRight="16dp"
             android:src="@drawable/male" />
@@ -37,9 +37,9 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/faculty_name"
             android:layout_toRightOf="@+id/faculty_image"
-            android:text="+910000000000"
-            android:textSize="14sp"
             android:autoLink="phone"
-            android:linksClickable="true"/>
+            android:linksClickable="true"
+            android:text="+910000000000"
+            android:textSize="16sp" />
     </RelativeLayout>
 </LinearLayout>

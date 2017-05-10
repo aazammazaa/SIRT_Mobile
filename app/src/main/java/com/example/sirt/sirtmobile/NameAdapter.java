@@ -25,7 +25,7 @@ public class NameAdapter extends ArrayAdapter<Name> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+                    R.layout.activity_peoples_directory_list_item, parent, false);
         }
 
         Name currentWord = getItem(position);

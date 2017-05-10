@@ -18,7 +18,7 @@
         android:layout_marginBottom="16dp">
 
         <ImageView
-            android:id="@+id/news"
+            android:id="@+id/news_image"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:layout_margin="16dp"
@@ -31,7 +31,7 @@
             android:background="@color/seperator_color" />
 
         <ImageView
-
+            android:id="@+id/calendar_image"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:layout_margin="16dp"
@@ -44,6 +44,7 @@
             android:background="@color/seperator_color" />
 
         <ImageView
+            android:id="@+id/timetable_image"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:layout_margin="16dp"
@@ -57,6 +58,7 @@
         android:layout_marginBottom="8dp">
 
         <TextView
+            android:id="@+id/news_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -64,6 +66,7 @@
             android:text="News" />
 
         <TextView
+            android:id="@+id/calendar_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -71,6 +74,7 @@
             android:text="Calendar" />
 
         <TextView
+            android:id="@+id/timetable_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -84,6 +88,7 @@
         android:layout_marginTop="16dp">
 
         <ImageView
+            android:id="@+id/shuttles_image"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:layout_margin="16dp"
@@ -109,6 +114,7 @@
             android:background="@color/seperator_color" />
 
         <ImageView
+            android:id="@+id/course_image"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:layout_margin="16dp"
@@ -122,6 +128,7 @@
         android:layout_marginTop="16dp">
 
         <TextView
+            android:id="@+id/shuttles_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -137,6 +144,7 @@
             android:text="People's Directory" />
 
         <TextView
+            android:id="@+id/course_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
