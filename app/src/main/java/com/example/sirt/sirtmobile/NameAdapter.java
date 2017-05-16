@@ -37,12 +37,8 @@ public class NameAdapter extends ArrayAdapter<Name> {
         facultyNumberTextView.setText(currentWord.getFacultyNumber());
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.faculty_image);
-        if (currentWord.hasImage()) {
-            imageView.setImageResource(currentWord.getFacultyImage());
-            imageView.setVisibility(View.VISIBLE);
-        } else {
-            imageView.setVisibility(View.GONE);
-        }
+        imageView.setImageResource(currentWord.getFacultyImage());
+
         return listItemView;
     }
 

@@ -39,7 +39,7 @@
             android:layout_toRightOf="@+id/scheme"
             android:autoLink="web"
             android:linksClickable="true"
-            android:text="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/090713090713122520.pdf"
+            android:text="@string/scheme_1"
             android:textStyle="bold"
             android:textSize="16sp" />
 
@@ -63,7 +63,7 @@
             android:autoLink="web"
             android:linksClickable="true"
             android:paddingTop="8dp"
-            android:text="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/Syl.pdf180913120040.pdf"
+            android:text="@string/syallbus_1"
             android:textStyle="bold"
             android:textSize="16sp" />
     </RelativeLayout>

@@ -5,17 +5,17 @@ package com.example.sirt.sirtmobile;
  */
 
 public class Name {
-    private static final int NO_IMAGE_PROVIDED = -1;
     private String viewNumber;
     private String viewName;
-    private int viewImage = NO_IMAGE_PROVIDED;
+    private int viewImage;
     private String semester;
     private String scheme;
-    private String schemeLink;
-    private String syllabusLink;
+    private int schemeLink;
+    private int syllabusLink;
     private String syllabus;
+    private String busNumber;
 
-    public Name(String semester, String scheme, String schemeLink, String syllabus, String syllabusLink) {
+    public Name(String semester, String scheme, int schemeLink, String syllabus, int syllabusLink) {
         this.semester = semester;
         this.scheme = scheme;
         this.schemeLink = schemeLink;
@@ -27,6 +27,10 @@ public class Name {
         viewNumber = facultyNumber;
         viewName = facultyName;
         viewImage = facultyImage;
+    }
+
+    public Name(String busNumber) {
+        this.busNumber = busNumber;
     }
 
     public String getFacultyNumber() {
@@ -41,10 +45,6 @@ public class Name {
         return viewImage;
     }
 
-    public boolean hasImage() {
-        return viewImage != NO_IMAGE_PROVIDED;
-    }
-
     public String getSemester() {
         return semester;
     }
@@ -53,7 +53,7 @@ public class Name {
         return scheme;
     }
 
-    public String getSchemeLink() {
+    public int getSchemeLink() {
         return schemeLink;
     }
 
@@ -61,7 +61,12 @@ public class Name {
         return syllabus;
     }
 
-    public String getSyllabusLink() {
+    public int getSyllabusLink() {
         return syllabusLink;
     }
+
+    public String getBusNumber() {
+        return busNumber;
+    }
+
 }
