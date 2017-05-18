@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/semester"
             android:layout_marginLeft="32dp"
+            android:paddingBottom="8dp"
             android:paddingRight="16dp"
             android:text="Scheme "
             android:textSize="16dp" />
@@ -39,9 +40,11 @@
             android:layout_toRightOf="@+id/scheme"
             android:autoLink="web"
             android:linksClickable="true"
-            android:text="@string/scheme_1"
-            android:textStyle="bold"
-            android:textSize="16sp" />
+            android:paddingBottom="8dp"
+            android:text="Download"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/syllabus"
@@ -63,8 +66,9 @@
             android:autoLink="web"
             android:linksClickable="true"
             android:paddingTop="8dp"
-            android:text="@string/syallbus_1"
-            android:textStyle="bold"
-            android:textSize="16sp" />
+            android:text="Download"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 </LinearLayout>

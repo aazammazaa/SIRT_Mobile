@@ -10,13 +10,13 @@ public class Name {
     private int viewImage;
     private String semester;
     private String scheme;
-    private int schemeLink;
-    private int syllabusLink;
+    private String schemeLink;
+    private String syllabusLink;
     private String syllabus;
     private String busName;
     private String busNumber;
 
-    public Name(String semester, String scheme, int schemeLink, String syllabus, int syllabusLink) {
+    public Name(String semester, String scheme, String schemeLink, String syllabus, String syllabusLink) {
         this.semester = semester;
         this.scheme = scheme;
         this.schemeLink = schemeLink;
@@ -55,7 +55,7 @@ public class Name {
         return scheme;
     }
 
-    public int getSchemeLink() {
+    public String getSchemeLink() {
         return schemeLink;
     }
 
@@ -63,7 +63,7 @@ public class Name {
         return syllabus;
     }
 
-    public int getSyllabusLink() {
+    public String getSyllabusLink() {
         return syllabusLink;
     }
 
