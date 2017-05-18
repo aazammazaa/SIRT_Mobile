@@ -1,7 +1,12 @@
 package com.example.sirt.sirtmobile;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.app.SearchManager;
+import android.widget.SearchView;
+import android.widget.SearchView.OnQueryTextListener;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -10,13 +15,15 @@ import java.util.ArrayList;
  * Created by hp on 08-May-17.
  */
 
-public class PeoplesDirectoryActivity extends AppCompatActivity {
+public class PeoplesDirectoryActivity extends ParentActivity {
+    NameAdapter adapter;
+    private ArrayList<Name> words;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_peoples_directory);
-
-        final ArrayList<Name> words = new ArrayList<Name>();
+        words = new ArrayList<Name>();
         words.add(new Name("Ms. Anjana Nigam", "+919179948293", R.drawable.female));
         words.add(new Name("Mr. Arun Jhapate", "+919754914446", R.drawable.male));
         words.add(new Name("Mr. Deepak Choudhary", "+918962100721", R.drawable.male));
@@ -37,9 +44,31 @@ public class PeoplesDirectoryActivity extends AppCompatActivity {
         words.add(new Name("Mr. Sunil Malviya", "+919098606075", R.drawable.male));
         words.add(new Name("Dr. Vipin Tiwari", "+910000000000", R.drawable.male));
 
-        NameAdapter adapter = new NameAdapter(this, words);
+        adapter = new NameAdapter(this, words);
         final ListView listView = (ListView) findViewById(R.id.peoples_directory);
         listView.setAdapter(adapter);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_search, menu);
+        MenuItem item = menu.findItem(R.id.menuSearch);
+        SearchView searchView = (SearchView) item.getActionView();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return true;
+            }
+        });
+        return super.onCreateOptionsMenu(menu);
     }
 }

@@ -11,13 +11,17 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class SplashScreen extends Activity {
+    /**
+     * Called when the activity is first created.
+     */
+    Thread splashTread;
+
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
         Window window = getWindow();
         window.setFormat(PixelFormat.RGBA_8888);
     }
-    /** Called when the activity is first created. */
-    Thread splashTread;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +47,7 @@ public class SplashScreen extends Activity {
                 try {
                     int waited = 0;
                     // Splash screen pause time
-                    while (waited < 5000) {
+                    while (waited < 3500) {
                         sleep(100);
                         waited += 100;
                     }

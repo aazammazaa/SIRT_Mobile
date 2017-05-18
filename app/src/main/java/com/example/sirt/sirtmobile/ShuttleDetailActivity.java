@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * Created by hp on 17-May-17.
  */
 
-public class ShuttleDetailActivity extends AppCompatActivity {
+public class ShuttleDetailActivity extends ParentActivity {
     int position;
 
     @Override

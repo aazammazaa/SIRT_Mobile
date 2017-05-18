@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * Created by hp on 10-May-17.
  */
 
-public class ShuttlesActivity extends AppCompatActivity {
+public class ShuttlesActivity extends ParentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by hp on 10-May-17.
  */
 
-public class NewsActivity extends AppCompatActivity {
+public class NewsActivity extends ParentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

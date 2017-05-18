@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * Created by hp on 09-May-17.
  */
 
-public class CoursesActivity extends AppCompatActivity {
+public class CoursesActivity extends ParentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
