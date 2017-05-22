@@ -14,36 +14,34 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by hp on 10-May-17.
+ * Created by Tanveer on 22-May-17.
  */
 
-public class TimeTableActivity extends ParentActivity {
+public class TimeTableSectionActivity extends ParentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_timetable);
+        setContentView(R.layout.time_table_section_activity);
 
 
-        final ArrayList<TimeTableWord> timeTableList = new ArrayList<>();
+        final ArrayList<TimeTableWord> timeTableSections = new ArrayList<>();
 
-        timeTableList.add(new TimeTableWord("II"));
-        timeTableList.add(new TimeTableWord("IV"));
-        timeTableList.add(new TimeTableWord("VI"));
-        timeTableList.add(new TimeTableWord("VIII"));
+        timeTableSections.add(new TimeTableWord("Section", "A"));
+        timeTableSections.add(new TimeTableWord("Section", "B"));
+        timeTableSections.add(new TimeTableWord("Section", "C"));
 
-        TimeTableAdapter adapter = new TimeTableAdapter(this, timeTableList);
-        final ListView listView = (ListView) findViewById(R.id.time_table);
+        TimeTableSectionAdapter adapter = new TimeTableSectionAdapter(this, timeTableSections);
+        final ListView listView = (ListView) findViewById(R.id.time_table_section_activity);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent newIntent = new Intent(TimeTableActivity.this, TimeTableSectionActivity.class);
+                Intent newIntent = new Intent(TimeTableSectionActivity.this, TimeTableDetailsActivity.class);
                 newIntent.putExtra("position", position);
                 startActivity(newIntent);
             }
         });
 
     }
-
 }

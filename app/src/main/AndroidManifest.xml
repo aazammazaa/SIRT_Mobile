@@ -37,7 +37,7 @@
         </activity>
         <activity
             android:name=".TimeTableActivity"
-            android:label="Timetable"
+            android:label="Select Semester"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -84,6 +84,23 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ShuttlesActivity"></meta-data>
         </activity>
+        <activity
+            android:name=".TimeTableSectionActivity"
+            android:label="Select Section"
+            android:parentActivityName=".TimeTableActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TimeTableActivity"></meta-data>
+        </activity>
+        <activity
+            android:name=".TimeTableDetailsActivity"
+            android:label="Timetable"
+            android:parentActivityName=".TimeTableSectionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TimeTableSectionActivity"></meta-data>
+        </activity>
+
 
     </application>
 
