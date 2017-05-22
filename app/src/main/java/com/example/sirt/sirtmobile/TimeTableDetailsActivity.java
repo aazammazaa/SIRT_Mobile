@@ -4,15 +4,18 @@ package com.example.sirt.sirtmobile;
  * Created by Tanveer on 22-May-17.
  */
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-public class TimeTableDetailsActivity extends ParentActivity {
-
+public class TimeTableDetailsActivity extends TimeTableSectionActivity {
+    int position;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Intent i = getIntent();
+        position = i.getExtras().getInt("position");
         super.onCreate(savedInstanceState);
 
         // Set the content of the activity to use the activity_main.xml layout file

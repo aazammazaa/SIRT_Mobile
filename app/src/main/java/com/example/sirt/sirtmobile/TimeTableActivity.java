@@ -26,7 +26,7 @@ public class TimeTableActivity extends ParentActivity {
 
         final ArrayList<TimeTableWord> timeTableList = new ArrayList<>();
 
-        timeTableList.add(new TimeTableWord("II"));
+        // timeTableList.add(new TimeTableWord("II"));
         timeTableList.add(new TimeTableWord("IV"));
         timeTableList.add(new TimeTableWord("VI"));
         timeTableList.add(new TimeTableWord("VIII"));
