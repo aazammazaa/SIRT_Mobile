@@ -8,34 +8,30 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
-import static android.support.v7.widget.AppCompatDrawableManager.get;
-
 /**
- * Created by hp on 09-May-17.
+ * Created by Vini Mishra on 09-May-17.
  */
 
-public class CourseAdapter extends ArrayAdapter<Name> {
-    public CourseAdapter(Context context, ArrayList<Name> words) {
+public class CourseAdapter extends ArrayAdapter<MainAdapter> {
+    public CourseAdapter(Context context, ArrayList<MainAdapter> words) {
         super(context, 0, words);
     }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
-        Name holder = null;
+        MainAdapter holder = null;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.activity_courses_list_item, parent, false);
         }
 
-        final Name currentWord = getItem(position);
+        final MainAdapter currentWord = getItem(position);
 
         TextView semester = (TextView) listItemView.findViewById(R.id.semester);
         semester.setText(currentWord.getSemester());

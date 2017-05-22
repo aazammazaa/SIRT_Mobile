@@ -10,11 +10,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by Vini Mishra on 16-May-17.
+ * Created by Vini Mishra on 22-May-17.
  */
 
-public class ShuttlesAdapter extends ArrayAdapter<MainAdapter> {
-    public ShuttlesAdapter(Context context, ArrayList<MainAdapter> words) {
+public class CalendarAcademicAdapter extends ArrayAdapter<MainAdapter> {
+    public CalendarAcademicAdapter(Context context, ArrayList<MainAdapter> words) {
         super(context, 0, words);
     }
 
@@ -23,15 +23,15 @@ public class ShuttlesAdapter extends ArrayAdapter<MainAdapter> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.activity_shuttle_list_item, parent, false);
+                    R.layout.activity_calendar_academic_list_item, parent, false);
         }
 
         MainAdapter currentWord = getItem(position);
 
-        TextView busName = (TextView) listItemView.findViewById(R.id.bus_name);
+        TextView busName = (TextView) listItemView.findViewById(R.id.academic_calendar_date);
         busName.setText(currentWord.getBusName());
 
-        TextView busNumber = (TextView) listItemView.findViewById(R.id.bus_number);
+        TextView busNumber = (TextView) listItemView.findViewById(R.id.academic_calendar_event);
         busNumber.setText(currentWord.getBusNumber());
 
         return listItemView;

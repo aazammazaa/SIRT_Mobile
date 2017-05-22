@@ -5,22 +5,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
- * Created by hp on 08-May-17.
+ * Created by Vini Mishra on 08-May-17.
  */
 
-public class NameAdapter extends ArrayAdapter<Name> implements Filterable {
-    public ArrayList<Name> mList;
-    public ArrayList<Name> originalList;
-    public NameAdapter(Context context, ArrayList<Name> words) {
+public class PeoplesDirectoryAdapter extends ArrayAdapter<MainAdapter> implements Filterable {
+    public ArrayList<MainAdapter> mList;
+    public ArrayList<MainAdapter> originalList;
+    public PeoplesDirectoryAdapter(Context context, ArrayList<MainAdapter> words) {
         super(context, 0, words);
     }
 
@@ -33,7 +31,7 @@ public class NameAdapter extends ArrayAdapter<Name> implements Filterable {
                     R.layout.activity_peoples_directory_list_item, parent, false);
         }
 
-        Name currentWord = getItem(position);
+        MainAdapter currentWord = getItem(position);
 
         TextView facultyNameTextView = (TextView) listItemView.findViewById(R.id.faculty_name);
         facultyNameTextView.setText(currentWord.getFacultyName());

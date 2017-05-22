@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ * Created by Tanveer on 06-Apr-17.
+ */
+
 public class MainActivity extends ParentActivity {
 
     @Override

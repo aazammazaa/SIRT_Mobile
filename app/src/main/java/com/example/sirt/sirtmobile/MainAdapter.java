@@ -1,10 +1,10 @@
 package com.example.sirt.sirtmobile;
 
 /**
- * Created by hp on 08-May-17.
+ * Created by Vini Mishra on 08-May-17.
  */
 
-public class Name {
+public class MainAdapter {
     private String viewNumber;
     private String viewName;
     private int viewImage;
@@ -15,8 +15,11 @@ public class Name {
     private String syllabus;
     private String busName;
     private String busNumber;
+    private int newsImage;
+    private String newsHeadline;
+    private String newsDetailed;
 
-    public Name(String semester, String scheme, String schemeLink, String syllabus, String syllabusLink) {
+    public MainAdapter(String semester, String scheme, String schemeLink, String syllabus, String syllabusLink) {
         this.semester = semester;
         this.scheme = scheme;
         this.schemeLink = schemeLink;
@@ -24,15 +27,21 @@ public class Name {
         this.syllabusLink = syllabusLink;
     }
 
-    public Name(String facultyName, String facultyNumber, int facultyImage) {
+    public MainAdapter(String facultyName, String facultyNumber, int facultyImage) {
         viewNumber = facultyNumber;
         viewName = facultyName;
         viewImage = facultyImage;
     }
 
-    public Name(String busName, String busNumber) {
+    public MainAdapter(String busName, String busNumber) {
         this.busName = busName;
         this.busNumber = busNumber;
+    }
+
+    public MainAdapter(int newsImage, String newsHeadline, String newsDetailed) {
+        this.newsImage = newsImage;
+        this.newsHeadline = newsHeadline;
+        this.newsDetailed = newsDetailed;
     }
 
     public String getFacultyNumber() {
@@ -75,5 +84,9 @@ public class Name {
         return busNumber;
     }
 
+    public int getNewsImage() { return newsImage; }
 
+    public String getNewsHeadline() { return newsHeadline; }
+
+    public String getNewsDetailed() { return newsDetailed; }
 }

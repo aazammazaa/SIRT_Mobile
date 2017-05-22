@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by hp on 10-May-17.
+ * Created by Vini Mishra on 10-May-17.
  */
 
 public class TimeTableActivity extends ParentActivity {

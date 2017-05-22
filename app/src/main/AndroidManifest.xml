@@ -108,7 +108,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"></meta-data>
         </activity>
-
+        <activity
+            android:name=".CalendarAcademicActivity"
+            android:label="Academic Calendar"
+            android:parentActivityName=".CalendarActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CalendarActivity"></meta-data>
+        </activity>
+        <activity
+            android:name=".CalendarCulturalActivity"
+            android:label="Cultural Calendar"
+            android:parentActivityName=".CalendarActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CalendarActivity"></meta-data>
+        </activity>
     </application>
 
 </manifest>

@@ -10,6 +10,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+/**
+ * Created by Tanveer on 17-May-17.
+ */
+
 public class SplashScreen extends Activity {
     /**
      * Called when the activity is first created.

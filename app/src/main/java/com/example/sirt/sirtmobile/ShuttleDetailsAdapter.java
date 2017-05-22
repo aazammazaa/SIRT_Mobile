@@ -9,14 +9,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static com.example.sirt.sirtmobile.R.id.timing;
-
 /**
- * Created by hp on 17-May-17.
+ * Created by Vini Mishra on 17-May-17.
  */
 
-public class ShuttleDetailsAdapter extends ArrayAdapter<Name> {
-    public ShuttleDetailsAdapter(Context context, ArrayList<Name> words) {
+public class ShuttleDetailsAdapter extends ArrayAdapter<MainAdapter> {
+    public ShuttleDetailsAdapter(Context context, ArrayList<MainAdapter> words) {
         super(context, 0, words);
     }
 
@@ -28,7 +26,7 @@ public class ShuttleDetailsAdapter extends ArrayAdapter<Name> {
                     R.layout.activity_shuttle_details_list_item, parent, false);
         }
 
-        Name currentWord = getItem(position);
+        MainAdapter currentWord = getItem(position);
 
         TextView timing = (TextView) listItemView.findViewById(R.id.timing);
         timing.setText(currentWord.getBusName());
