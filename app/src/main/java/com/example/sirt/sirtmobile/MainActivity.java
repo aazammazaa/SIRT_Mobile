@@ -76,7 +76,7 @@ public class MainActivity extends ParentActivity {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent timetimeImageIntent = new Intent(MainActivity.this, TimeTableActivity.class);
+                Intent timetimeImageIntent = new Intent(MainActivity.this, TimeTableSectionActivity.class);
                 startActivity(timetimeImageIntent);
             }
         });
@@ -86,7 +86,7 @@ public class MainActivity extends ParentActivity {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent timetableTextIntent = new Intent(MainActivity.this, TimeTableActivity.class);
+                Intent timetableTextIntent = new Intent(MainActivity.this, TimeTableSectionActivity.class);
                 startActivity(timetableTextIntent);
             }
         });
