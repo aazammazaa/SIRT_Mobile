@@ -33,8 +33,8 @@ public class TimeTableSectionActivity extends ParentActivity {
         timeTableSections.add(new TimeTableWord("Section", "VI B"));
         timeTableSections.add(new TimeTableWord("Section", "VI C"));
         timeTableSections.add(new TimeTableWord("Section", "VIII A"));
-        timeTableSections.add(new TimeTableWord("Section", "VIII B"));
-        timeTableSections.add(new TimeTableWord("Section", "VIII C"));
+        // timeTableSections.add(new TimeTableWord("Section", "VIII B"));
+        // timeTableSections.add(new TimeTableWord("Section", "VIII C"));
 
         TimeTableSectionAdapter adapter = new TimeTableSectionAdapter(this, timeTableSections);
         final ListView listView = (ListView) findViewById(R.id.time_table_section_activity);
