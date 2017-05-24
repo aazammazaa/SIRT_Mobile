@@ -68,7 +68,7 @@ public class TimeTableWednesdayFragment extends Fragment {
                 words.add(new TimeTableDetailsWord("11:00 AM", "11:50 AM", "Microprocessor", "Ms. Sngeeta Shukla"));
                 words.add(new TimeTableDetailsWord("12:30 PM", "01:20 PM", "CN", "Ms. Ruchi Thakur"));
                 words.add(new TimeTableDetailsWord("01:20 PM", "02:10 PM", "ACA", "Ms. Anjana Nigam"));
-                words.add(new TimeTableDetailsWord("02:10 PM", "11:00 PM", "PPL", "Ms. Sanyogita Soni"));
+                words.add(new TimeTableDetailsWord("02:10 PM", "03:00 PM", "PPL", "Ms. Sanyogita Soni"));
                 break;
             case 5: //VI C
                 words.add(new TimeTableDetailsWord("08:30 AM", "09:20 AM", "Microprocessor", "Ms. Sngeeta Shukla"));
@@ -77,7 +77,7 @@ public class TimeTableWednesdayFragment extends Fragment {
                 words.add(new TimeTableDetailsWord("11:00 AM", "11:50 AM", "ACA", "Ms. Shalu Arya"));
                 words.add(new TimeTableDetailsWord("12:30 PM", "01:20 PM", "Microprocessor/CN Lab", "Ms. Sangeeta Shukla\nMr. Arun Jhapate"));
                 words.add(new TimeTableDetailsWord("01:20 PM", "02:10 PM", "Microprocessor/CN Lab", "Ms. Sangeeta Shukla \nMr. Arun Jhapate"));
-                words.add(new TimeTableDetailsWord("02:10 PM", "11:00 PM", "PPL", "Dr. Vipin Tiwari"));
+                words.add(new TimeTableDetailsWord("02:10 PM", "03:00 PM", "PPL", "Dr. Vipin Tiwari"));
                 break;
             case 6: //VIII A
                 words.add(new TimeTableDetailsWord("08:30 AM", "09:20 AM", "Soft Comp.", " Mr. Arun Jhapate"));
@@ -86,7 +86,7 @@ public class TimeTableWednesdayFragment extends Fragment {
                 words.add(new TimeTableDetailsWord("11:00 AM", "11:50 AM", "Wireless", "Dr. Rashmi Soni"));
                 words.add(new TimeTableDetailsWord("12:30 PM", "01:20 PM", "Soft Comp. /Web Engg. Lab", "Mr. Arun Jhapate\nMr. Pawan Sharma"));
                 words.add(new TimeTableDetailsWord("01:20 PM", "02:10 PM", "Soft Comp. /Web Engg. Lab", "Mr. Arun Jhapate\nMr. Pawan Sharma"));
-                words.add(new TimeTableDetailsWord("02:10 PM", "11:00 PM", "Counselling", " "));
+                words.add(new TimeTableDetailsWord("02:10 PM", "03:00 PM", "Counselling", " "));
                 break;
         }
         TimeTableDetailsWordAdapter adapter = new TimeTableDetailsWordAdapter(getActivity(), words);
